@@ -1,4 +1,4 @@
-sexport default [
+export default [
     {
         id: 1,
         name: "Grumpy Cat Poster",
