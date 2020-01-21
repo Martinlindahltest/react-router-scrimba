@@ -1,16 +1,22 @@
 import React from "react"
 import ProductsData from './ProductsData'
+import ProductList from "./ProductList"
 
 function Products() {
     console.log(ProductsData)
-    /** 
-    id: 1,
-        name: "Grumpy Cat Poster",
-            description: "Everyone's favorite cat who loves to hate",
-                price: 15
-                */
+    /**
+     * Challenge:
+     * 
+     * 1. Create a ProductDetail component
+     * 2. Link each product name to a detail page of that product 
+     *    under the route "/products/{insert product id here}" (e.g.: "/products/2")
+     * 3. Clicking the product name should replace the product list page with
+     *    the detail page of that component.
+     * 
+     * Hint: Check out the `useParams` lesson if you need a refresher.
+     */
 
-    const jsxArray = ProductsData.map(obj => <div>{obj.name}</div>)
+    const jsxArray = ProductsData.map(data => <ProductList data={data} />)
 
     return (
         <div>
