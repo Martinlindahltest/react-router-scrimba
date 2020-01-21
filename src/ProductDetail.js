@@ -20,8 +20,6 @@ export default function ProductDetail() {
     //const thisService = servicesData.find(service => service._id === serviceId)
 
 
-    console.log('thisService', thisService)
-
     const { id, name, description, price } = thisService
 
 
