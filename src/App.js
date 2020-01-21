@@ -17,12 +17,13 @@ function App() {
         <Link to="/">Home</Link>
 
         <Switch>
+          <Route exact path="/">
+            <Home />
+          </Route>
           <Route exact path="/products">
             <Products />
           </Route>
-          <Route path="/">
-            <Home />
-          </Route>
+
 
         </Switch>
       </nav>
